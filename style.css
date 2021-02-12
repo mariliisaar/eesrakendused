@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+#clock {
+    justify-content: center;
+}
