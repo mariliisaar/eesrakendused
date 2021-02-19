@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+input[type=text] {
+    width: calc(100% - 50px);
+    margin: 4px 3px;
+    padding: 14px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #009900;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loadLocal {
+    background-color: #000099;
+}
+
+#loadLocal:hover {
+    background-color: lightseagreen;
+}
+
+#deleteLocal {
+    background-color: #EE0000;
+}
+
+#deleteLocal:hover {
+    background-color: salmon;
+}
+
+#dataContainer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #buttonContainer {
+        flex-direction: column;
+    }
+}
