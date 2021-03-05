@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esimene javascript</title>
+    <style>
+        .second {
+            background-color: aqua;
+        }
+        #first {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">Test sisu</div>
+    <div class="second">Sisu 2</div>
+
+    <script>
+        let number = 1;
+        const word = "Number";
+
+        var number2 = 2; // soovitav mitte kasutada!
+        /*
+            Kommentaari kasutamine
+        */
+
+        let first = document.getElementById('first');
+        let second = document.querySelector('.second');
+
+        console.log("Number esimest korda: " + number);
+        first.style.display = "none";
+        first.style.display = "block";
+
+        second.innerHTML = "Mingi uus sisu";
+
+        number = 2;
+        console.log("Number teist korda: " + number);
+    </script>
+</body>
+</html>

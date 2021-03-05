@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+}
+
+footer, .clock-section {
+    flex-shrink: 0;
+}
+
+.clock-section {
+    flex-grow: 1;
+    margin-top: 10%;
+}
+
+.date-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.clock-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.clock-text {
+    font-size: 5em;
+}
+
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 350px) {
+    .date-container {
+        font-size: 1.5em;
+    }
+
+    .clock-text {
+        font-size: 4em;
+    }
+
+    .author-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
